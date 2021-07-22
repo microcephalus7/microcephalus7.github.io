@@ -1,0 +1,15 @@
+---
+title: 'failed to emit precompiled header bridging header'
+date: 2021-07-21
+categories: iOS Web React-Native
+---
+
+# failed to emit precompiled header bridging header
+
+      platform :ios, '11.0', Development Info iOS '11.0'
+
+xCode 에서 빌드 시 failed to emit precompiled header bridging header
+
+podfile 에서 ios version 은 바꿨지만 Development Info 를 일치시키지 않아서 생긴 문제.
+
+podfile 의 iOS version 과 Targets General 의 Deployment Info iOS 버전 일치 하면 해결.
